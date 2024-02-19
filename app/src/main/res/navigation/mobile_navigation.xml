@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_log_In">
+
+    <fragment
+        android:id="@+id/nav_log_In"
+        android:name="com.example.acostastudio.ui.login.loginFragment"
+        android:label="@string/menu_SignUp"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_nav_log_In_to_nav_signUp"
+            app:destination="@id/nav_signUp"
+            app:popUpTo="@id/nav_signUp" />
+        <action
+            android:id="@+id/action_nav_log_In_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.acostastudio.ui.info.InfoFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_nav_info_to_nav_subscription"
+            app:destination="@id/nav_subscription" />
+        <action
+            android:id="@+id/action_nav_info_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_subscription"
+        android:name="com.example.acostastudio.ui.subscription.SubscriptionFragment"
+        android:label="@string/menu_sub"
+        tools:layout="@layout/fragment_subscription" >
+        <action
+            android:id="@+id/action_nav_subscription_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_signUp"
+        android:name="com.example.acostastudio.ui.singup.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_nav_signUp_to_nav_log_In"
+            app:destination="@id/nav_log_In"
+            app:popUpTo="@id/nav_log_In"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.acostastudio.ui.inicio.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_nav_inicio_to_nav_info"
+            app:destination="@id/nav_info" />
+        <action
+            android:id="@+id/action_nav_inicio_to_nav_subscription"
+            app:destination="@id/nav_subscription" />
+    </fragment>
+</navigation>

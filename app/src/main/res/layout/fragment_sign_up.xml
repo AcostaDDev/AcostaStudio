@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_login"
+    android:orientation="vertical"
+    tools:context=".ui.login.loginFragment">
+
+
+    <FrameLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bordes_loginframe">
+
+        <FrameLayout
+            android:id="@+id/signUp_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/signUp_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/txt_signUp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/singUp_mail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="100dp"
+                android:ems="10"
+                android:hint="@string/hint_correo"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textColorHint="@color/black"
+                android:textIsSelectable="true" />
+
+            <EditText
+                android:id="@+id/singUp_psw"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:ems="10"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColorHint="@color/black"
+                android:textIsSelectable="true" />
+            <EditText
+                android:id="@+id/singUp_psw2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="@string/hint_password2"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColorHint="@color/black"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/alreadySignedUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:minHeight="48dp"
+                android:layout_marginTop="50dp"
+                android:onClick="alreadySignedUp"
+                android:text="@string/txt_alreadySignedUp"
+                android:textColor="#4B7CD3"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSingUp"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="125dp"
+                android:backgroundTint="#0B51CA"
+                android:text="@string/btn_signUp"
+                app:cornerRadius="25dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="1dp" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

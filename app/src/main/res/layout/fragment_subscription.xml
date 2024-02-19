@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pago"
+    tools:context=".ui.subscription.SubscriptionFragment">
+
+    <FrameLayout
+        android:layout_width="325dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bordes_loginframe">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:text="Formulario de pago"/>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_gravity="top|center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"
+                android:text="Número de tarjeta:"/>
+
+            <LinearLayout
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bordes_loginframe">
+
+                <EditText
+                    android:id="@+id/txtCardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:digits="0123456789 -"
+                    android:gravity="center"
+                    android:hint="XXXX-XXXX-XXXX-XXXX"
+                    android:inputType="number"
+                    android:maxLength="19"
+                    android:maxLines="1"
+                    android:orientation="horizontal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+                <ImageView
+                    android:id="@+id/imageTickCard"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/tickcreditcard"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"
+                android:text="Nombre del Titular:"/>
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bordes_loginframe"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:hint="Ex: David Acosta Carbajo"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/txt_Fech"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bordes_loginframe">
+                        <EditText
+                            android:id="@+id/txtFechCad"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:inputType="number"
+                            android:digits="0123456789 /"
+                            android:maxLength="5"
+                            android:hint="@string/hint_Fecha"
+                            android:textColorHint="@color/grey"
+                            android:textColor="@color/black"/>
+                        <ImageView
+                            android:id="@+id/imageTickFech"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/tickcreditcard"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/txt_CVV"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/txtCVV"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/bordes_loginframe"
+                        android:digits="0123456789"
+                        android:hint="@string/hint_CVV"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="200dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/visa"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/mastercard"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+
+                android:background="@drawable/americanexpress"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+
+                android:background="@drawable/bizum"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="100dp"
+            app:cornerRadius="50dp"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/confirmar_pago"/>
+    </FrameLayout>
+
+</FrameLayout>

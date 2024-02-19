@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Trabajo6</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_name">David Acosta Carbajo</string>
+    <string name="nav_header_mail">acostadavdevelopment@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="menu_SignUp">Sign In</string>
+    <string name="menu_info">About Us</string>
+    <string name="menu_sub">Suscríbete!</string>
+    <string name="menu_calculadora">Calculadora</string>
+
+    <string name="txt_login">Inicia sesión para acceder</string>
+    <string name="txt_signUp">Registrate para acceder</string>
+    <string name="txt_passwordForgotten">¿Ha olvidado su contraseña?</string>
+    <string name="txt_alreadySignedUp">Ya tienes cuenta?</string>
+    <string name="txt_Accepted"> Ha iniciado sesión correctamente :)</string>
+    <string name="txt_Info"> Usted puede acceder a todas las características de la app</string>
+
+    <string name="btn_login">Log In</string>
+    <string name="btn_signUp">Sign Up</string>
+
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_password2">Repetir contraseña</string>
+
+    <string name="mail">dac@gmail.com</string>
+    <string name="psw">dac123</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings Usados en Info_Fragment -->
+
+    <string name="who_are_we">¿Quiénes somos?</string>
+    <string name="parrafo1">Bienvenidos a nuestra empresa, un emprendimiento joven dedicado al sector tecnológico. Nos enfocamos en proporcionar soluciones innovadoras y personalizadas para cada uno de nuestros clientes. \n</string>
+    <string name="parrafo2">En nuestra empresa, estamos comprometidos con la calidad y el servicio excepcional. Trabajamos día a día para mantenernos a la vanguardia en nuestro sector y ofrecer soluciones profesionales y eficientes a precios competitivos.\n</string>
+    <string name="parrafo3">Nuestro equipo está formado por profesionales altamente capacitados y apasionados por la tecnología. Nos enorgullece contar con expertos en programación, diseño web, marketing digital y otras áreas importantes para el éxito de su empresa. \n</string>
+    <string name="parrafo4">En nuestra pequeña empresa, creemos que cada cliente es único y merece atención personalizada. Nos tomamos el tiempo de escuchar sus necesidades y trabajar juntos para encontrar la mejor solución para su negocio.\n</string>
+    <string name="parrafo5">En resumen, nuestra empresa es su mejor opción en soluciones tecnológicas. Nos comprometemos a proveer un servicio excepcional y soluciones personalizadas y efectivas para su negocio. ¡Gracias por elegirnos!</string>
+    <string name="confirmar_pago">Confirmar pago</string>
+    <string name="hint_CVV">Ex: 364</string>
+    <string name="txt_CVV">CVV:</string>
+    <string name="hint_Fecha">Ex: 09/29</string>
+    <string name="txt_Fech">Fech Caducidad:</string>
+
+    <string name="historia_detras_empresa">Nuestra empresa nació de la pasión compartida por la tecnología y la programación. Comenzamos en 2024 con el objetivo de ofrecer soluciones innovadoras y personalizadas para desafíos tecnológicos. Desde entonces, hemos estado dedicados a desarrollar software de alta calidad y a brindar servicios de consultoría que impulsen el éxito de nuestros clientes.</string>
+    <string name="contenido2"> Nos destacamos por nuestra experiencia técnica y nuestro enfoque centrado en el cliente. Nos esforzamos por entender las necesidades específicas de cada proyecto y ofrecer soluciones a medida que maximicen el valor para nuestros clientes. Además, nos mantenemos actualizados con las últimas tecnologías y tendencias del sector para ofrecer productos y servicios de vanguardia.</string>
+
+    <string name="titulo1">¿Cuál es la historia detrás de la empresa?</string>
+    <string name="titulo2">¿¿Qué nos diferencia de otras empresas en nuestra industria?</string>
+    <string name="inicio">Inicio</string>
+    <string name="ubicacion1">Si estás buscando nuestra ubicación y quieres obtener indicaciones precisas para llegar aquí, Google Maps es la opción perfecta. Como empresa, queremos asegurarnos de que nuestros clientes puedan encontrarnos fácilmente. Por eso, hemos agregado un botón en nuestra aplicación que permite a los usuarios navegar hasta nuestra ubicación con solo un toque.</string>
+    <string name="ubicacion2">Con Google Maps, puedes buscar nuestra dirección y obtener indicaciones precisas para llegar aquí en coche, a pie o en transporte público. Además, puedes explorar los alrededores y conocer más lugares de interés cercanos. Todo esto está al alcance de tus dedos.</string>
+    <string name="ubicacion3">No te preocupes si no conoces nuestra ubicación exacta, ¡haz clic en nuestro botón de Google Maps y llega aquí sin problemas! Nuestra ubicación está esperando a que nos visites, ¡nos vemos pronto!</string>
+    <string name="suscribirse">Suscribirse</string>
+    <string name="m_s_info">Más info</string>
+    <string name="suscribete_parrafo">Nos encargamos de poner a tu disposición herramientas de programación, creación de video y montajes gracias a la IA AStudio creada por los mejores programadores del sector por una suscripción mensual de 33.33€</string>
+    <string name="nuestras_oficinas">Nuestras oficinas:</string>
+    <string name="acostastudio">AcostaStudio</string>
+    <string name="nuestra_ubicacion">Nuestra ubicacion</string>
+</resources>
